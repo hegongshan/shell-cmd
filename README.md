@@ -1,4 +1,5 @@
-### Write Shell cmd
+### Write Shell cmd by myself
 
 * pwd
 * ls
+* hostname

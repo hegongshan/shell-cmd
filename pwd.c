@@ -1,14 +1,14 @@
-#include <unistd.h>
 #include <stdio.h>
-#include <dirent.h>
+#include <unistd.h>
+#include <sys/param.h>
 
 /**
- * MAXNAMLEN定义在dirent.h<br>
+ * MAXPATHLEN定义在sys/param.h<br>
  * 函数getcwd()定义在unistd.h
  */
 int main() {
-    char buffer[MAXNAMLEN];
-    getcwd(buffer, sizeof(buffer));
-    printf("%s\n", buffer);
+    char buff[MAXPATHLEN];
+    getcwd(buff, sizeof(buff));
+    printf("%s\n", buff);
     return 0;
 }
