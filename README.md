@@ -3,3 +3,4 @@
 * pwd
 * ls
 * hostname
+* hexdump
